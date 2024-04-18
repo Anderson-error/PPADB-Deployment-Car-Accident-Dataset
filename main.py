@@ -38,7 +38,7 @@ model.fit(X_train, y_train)
 
 # Save the trained model as a pickle file
 with open('CarAccidentModel.pkl', 'wb') as f:
-    pickle.dump(model, f)
+    pickle1.dump(model, f)
 
 print("Model saved successfully as 'CarAccidentModel.pkl'")
 
