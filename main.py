@@ -94,10 +94,7 @@ def main():
         st.title("Exploratory Data Analysis (EDA)")
         st.write("Performing EDA on the dataset...")
         st.write("### Dataset Overview")
-        st.write(chart_data)
-        st.write("Nama-nama Kolom:")
-        for column, dtype in chart_data.dtypes.items():
-            st.write(f"Column: {column}, Dtype: {dtype}")
+        st.write(chart_data.head())
 
         st.write("### Summary Statistics")
         st.write(chart_data.describe())
