@@ -33,14 +33,14 @@ y = df['Accident_Severity']  # Target variable
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Train the model
-model = RandomForestClassifier(n_estimators=100, random_state=42)
-model.fit(X_train, y_train)
+# model = RandomForestClassifier(n_estimators=100, random_state=42)
+# model.fit(X_train, y_train)
 
 # Save the trained model as a pickle file
-with open('CarAccidentModel.pkl', 'wb') as f:
-    pickle1.dump(model, f)
+# with open('CarAccidentModel.pkl', 'wb') as f:
+#     pickle1.dump(model, f)
 
-print("Model saved successfully as 'CarAccidentModel.pkl'")
+# print("Model saved successfully as 'CarAccidentModel.pkl'")
 
 
 with open('CarAccidentModel.pkl', 'rb') as f:
