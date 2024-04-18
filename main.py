@@ -44,7 +44,7 @@ print("Model saved successfully as 'CarAccidentModel.pkl'")
 
 
 with open('CarAccidentModel.pkl', 'rb') as f:
-        car_model = pickle.load(f)
+        car_model = pickle1.load(f)
 
 def main():
     st.set_page_config(page_title="Car Accident Dataset", page_icon="📊")
