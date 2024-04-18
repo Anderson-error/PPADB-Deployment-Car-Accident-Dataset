@@ -10,7 +10,7 @@ df = pd.read_csv('DataCleanedUp.csv')
 df.columns = [col.replace("-", "").replace("+", "").replace(" ", "_") for col in df.columns]
 
 with open('CarAccidentModel.pkl', 'rb') as f:
-        car_model = pickle1.load(f)
+     car_model = pickle1.load(f)
 
 def main():
     st.set_page_config(page_title="Car Accident Dataset", page_icon="📊")
