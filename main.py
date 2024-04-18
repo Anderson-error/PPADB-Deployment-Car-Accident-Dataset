@@ -43,7 +43,7 @@ df.columns = [col.replace("-", "").replace("+", "").replace(" ", "_") for col in
 # print("Model saved successfully as 'CarAccidentModel.pkl'")
 
 
-with open('CarAccidentModel.pkl', 'rb') as f:
+with open('apple_model.pkl', 'rb') as f:
         car_model = pickle1.load(f)
 
 def main():
