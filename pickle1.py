@@ -23,7 +23,7 @@ features = [
 ]
 
 # Split the data into features and target variable
-X = df[features]  # Features
+X = df.drop(columns=['Accident_Severity'])  # Features
 y = df['Accident_Severity']  # Target variable
 
 # Split the data into training and testing sets
